@@ -1,61 +1,75 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2870
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: #f2f7ff;
+  color: #111;
+}
 
-\f0\fs24 \cf0 body \{\
-  font-family: Arial, sans-serif;\
-  margin: 0;\
-  background: #f5f9ff;\
-  color: #1a1a1a;\
-\}\
-\
-.container \{\
-  max-width: 600px;\
-  margin: auto;\
-  padding: 20px;\
-\}\
-\
-header \{\
-  text-align: center;\
-  margin-bottom: 20px;\
-\}\
-\
-h1 \{\
-  color: #1f6fff;\
-\}\
-\
-.score-box \{\
-  background: #1f6fff;\
-  color: white;\
-  padding: 15px;\
-  border-radius: 12px;\
-  margin-top: 10px;\
-\}\
-\
-section \{\
-  background: white;\
-  padding: 15px;\
-  margin-bottom: 15px;\
-  border-radius: 12px;\
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);\
-\}\
-\
-h2 \{\
-  margin-top: 0;\
-  color: #1f6fff;\
-\}\
-\
-label \{\
-  display: block;\
-  padding: 6px 0;\
-  font-size: 15px;\
-\}\
-\
-input[type="checkbox"] \{\
-  margin-right: 10px;\
-  transform: scale(1.2);\
-\}\
+/* App container */
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Header (app-like top bar) */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 16px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: #1f6fff;
+  font-size: 24px;
+}
+
+#quote {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Score card */
+.score-box {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #1f6fff, #5aa2ff);
+  color: white;
+  padding: 14px;
+  border-radius: 16px;
+}
+
+/* Sections like app cards */
+section {
+  background: white;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+/* Section titles */
+h2 {
+  font-size: 16px;
+  margin-top: 0;
+  color: #1f6fff;
+}
+
+/* Tasks */
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* iOS-style checkbox scaling */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #1f6fff;
 }
